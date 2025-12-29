@@ -42,13 +42,13 @@ public class MainCommand implements CommandExecutor {
                     sender.sendMessage(coloredMsg2);
                     return true;
                 }
-                if (args_length == 1 && args[0].equalsIgnoreCase("info")) {
-                    sender.sendMessage("§eSimple§fWelcome §bv" + plugin.getDescription().getVersion());
-                    sender.sendMessage("§7" + plugin.getDescription());
-                    return true;
-                }
-            }
         }
+           if (args.length == 1 && args[0].equalsIgnoreCase("info")) {
+              sender.sendMessage("§eSimple§fWelcome §bv" + plugin.getDescription().getVersion());
+              sender.sendMessage("§7" + plugin.getDescription());
+              return true;
+           }
+    }
         return true;
     }
 }
