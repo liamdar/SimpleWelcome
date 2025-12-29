@@ -17,8 +17,8 @@ public class MainCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (cmd.getName().equalsIgnoreCase("sw")) {
             if (args.length == 0 || (args.length == 1 && !args[0].equalsIgnoreCase("reload"))) {
-                sender.sendMessage("Â§aMiPlugin v" + plugin.getDescription().getVersion());
-                sender.sendMessage("Â§7Usa Â§e/miComando reload Â§7para recargar.");
+                sender.sendMessage("§eSimple§fWelcome §bv" + plugin.getDescription().getVersion());
+                sender.sendMessage("§7Made by liamdar");
                 return true;
             }
             if (args.length == 1 && args[0].equalsIgnoreCase("reload")) {
