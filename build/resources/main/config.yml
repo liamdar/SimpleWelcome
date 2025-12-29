@@ -1,0 +1,8 @@
+join-message-enabled: false
+first-join-message-enabled: true
+disable-default-joinmsg: true
+join:
+ join-message: "Thanks for joining %player%"
+ first-join-message: "Hwy! Thanks for joining, welcome"
+lang:
+ no-permission: "No permission"
