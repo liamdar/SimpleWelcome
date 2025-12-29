@@ -1,0 +1,4 @@
+me/liamdar/SimpleWelcome/commands/MainCommand.class
+me/liamdar/SimpleWelcome/listener/FirstJoinListener.class
+me/liamdar/SimpleWelcome/listener/JoinEvent.class
+me/liamdar/SimpleWelcome/WelcomePlugin.class
