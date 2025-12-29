@@ -5,6 +5,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
 
 public class MainCommand implements CommandExecutor {
     private final JavaPlugin plugin;
@@ -14,11 +15,11 @@ public class MainCommand implements CommandExecutor {
     }
 
     @Override
-    public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String label, String[] args) {
         if (cmd.getName().equalsIgnoreCase("sw")) {
             if (args.length == 0 || (args.length == 1 && !args[0].equalsIgnoreCase("reload"))) {
                 sender.sendMessage("§eSimple§fWelcome §bv" + plugin.getDescription().getVersion());
-                sender.sendMessage("§7Made by liamdar");
+                sender.sendMessage("§7" + plugin.getDescription());
                 return true;
             }
             if (args.length == 1 && args[0].equalsIgnoreCase("reload")) {
